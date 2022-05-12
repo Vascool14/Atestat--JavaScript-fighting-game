@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fighting game -atestat</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(238, 85, 85);">
+    <div style="position: relative;">
+        <div style="position: absolute; display: flex; width: 1024px; align-items: center; padding: 20px;">
+            <!-- <img src="./img/background.png" style="top: -1em; left: -1em; z-index: 1;" alt=""> -->
+            <!-- viata player -->
+            <div style="position: relative; height: 30px;width: 100%; display: flex; justify-content: flex-end;">
+                <div style="background-color: yellow; height: 30px;width: 100%;"></div>
+                <div id="playerHealth" style="position: absolute; background: blue; top: 0; right: 0; bottom: 0;width: 100%;"></div>
+
+            </div>
+            <!-- timer -->
+            <div id="timer" style="
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            font-family: 'Press Start 2P', cursive;
+            "
+        >10</div>
+
+            <div style="position: relative; height: 30px;width: 100%;">
+                <!-- viata enemy -->
+                <div style="background-color: yellow; height: 30px; width: 100%;"></div>
+                <div id="enemyHealth" style="position: absolute; background: purple; top: 0; right: 0; bottom: 0;left: 0;"></div>
+            </div>
+        </div>
+
+        <div id="displayText" 
+        style="position: absolute; 
+        color: white; 
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: none"
+        >Tie</div>
+        <canvas></canvas> 
+    <div style="position: absolute; left: 1050px; top: 20px;font-size: 35px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Vascul Andrei -11C</div>
+    <script src="index.js"></script>
+</body>
+</html>
